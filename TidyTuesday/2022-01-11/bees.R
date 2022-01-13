@@ -67,23 +67,10 @@ colony %>%
   scale_color_manual(values=myColors) +
   theme_bw() +
   labs(color = "Season",
-       title = "Percentage of bee colony loss",
+       title = "Percentage of bee colony loss\nEven if the rate is decreasing we are still losing bees",
        subtitle = theState,
        y = NULL,
        x = NULL)
 
-ggsave(filename = "bee_colony_loss.png", plot = last_plot())
-
-post_tweet(
-  status = "my first #tidytuesday - bee colony loss",
-  media = bee_colony_loss,
-  token = NULL,
-  in_reply_to_status_id = NULL,
-  destroy_id = NULL,
-  retweet_id = NULL,
-  auto_populate_reply_metadata = FALSE,
-  media_alt_text = "Lolliplot graph of the percentual of bee colony loss by season in the last 7 years in United States show an overall stability",
-  lat = NULL,
-  long = NULL,
-  display_coordinates = FALSE
-)    
+ggsave(filename = "./bee_colony_loss.png", plot = last_plot())
+(bee_colony_loss)
