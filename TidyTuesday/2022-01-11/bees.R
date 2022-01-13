@@ -52,8 +52,8 @@ myColors <- c("Summer" = "#f47db7", "Autumn" = "#e6867d",
               "Winter" = "#4689dd", "Spring" = "#56adc5")
 
 # generate plot for hole country
-#theState = "United States"
-theState = "Texas"
+theState = "United States"
+#theState = "Texas"
 
 bee_colony_loss <- 
 colony %>% 
@@ -75,5 +75,5 @@ colony %>%
        y = NULL,
        x = NULL)
 
-ggsave(filename = "./bee_colony_loss.png", plot = last_plot())
+ggsave(filename = "./TidyTuesday/2022-01-11/bee_colony_loss.png", plot = last_plot())
 (bee_colony_loss)
