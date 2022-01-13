@@ -26,6 +26,6 @@ Hei TidyTuesday, wouldn't it be possible to have some "happy" data at least in t
 
 Hoppe you like my plot!
 
-![Bee colony loss](./bee_colony_loss.png = 250x250)
+<img src="./bee_colony_loss.png" width=50% height=50%>
 
 A lolliplot graph with the y axis inverted.
