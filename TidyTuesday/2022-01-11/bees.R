@@ -47,6 +47,7 @@ c_trans <- function(a, b, breaks = b$breaks, format = b$format) {
 }
 rev_date <- c_trans("reverse", "time")
 
+# Need better colors for the seasons
 myColors <- c("Summer" = "#f47db7", "Autumn" = "#e6867d", 
               "Winter" = "#4689dd", "Spring" = "#56adc5")
 theState = "United States"
