@@ -29,3 +29,9 @@ Hoppe you like my plot!
 <img src="./bee_colony_loss.png" width=50% height=50%>
 
 A lolliplot graph with the y axis inverted.
+
+A facet graph is also interesting:
+
+<img src="./bee_loss_by_season.png" width=50% height=50%>
+
+
