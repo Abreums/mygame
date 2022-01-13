@@ -22,7 +22,7 @@ It seems to me that it would be more intuitive if time was presented in a top-do
 
 And even if the loss rate is smaller for some more recent periods (not for all states), it still means that the number of colonies is decreasing, which is very scary.
 
-Hei TidyTuesday, wouldn't it be possible to have some "happy" data at least in the beginning of the year?
+Hey TidyTuesday, wouldn't it be possible to have some "happy" data at least in the beginning of the year?
 
 Hoppe you like my plot!
 
