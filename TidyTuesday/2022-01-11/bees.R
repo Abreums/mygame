@@ -75,5 +75,12 @@ colony %>%
        y = NULL,
        x = NULL)
 
-ggsave(filename = "./TidyTuesday/2022-01-11/bee_colony_loss.png", plot = last_plot())
-(bee_colony_loss)
+setwd(dir = "./TidyTuesday/2022-01-11")
+ggsave(filename = "./bee_colony_loss.png", plot = last_plot())
+(bee_colony_loss +
+    theme(
+      legend.position = "none"
+    ) +
+    facet_wrap(~ season))
+ggsave(filename = "./bee_loss_by_season.png")
+
