@@ -8,6 +8,7 @@
 library(tidyverse)
 library(scales)
 
+
 # Or read in the data manually
 colony <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-01-11/colony.csv')
 
@@ -69,13 +70,14 @@ colony %>%
   scale_y_continuous(trans = rev_date) +
   scale_color_manual(values=myColors) +
   theme_bw() +
-  labs(color = "Season",
+  labs(color = "Season:",
        title = "Percentage of bee colony loss\nEven if the rate is decreasing we are still losing bees",
        subtitle = theState,
        y = NULL,
        x = NULL)
 
 setwd(dir = "./TidyTuesday/2022-01-11")
+(bee_colony_loss)
 ggsave(filename = "./bee_colony_loss.png", plot = last_plot())
 (bee_colony_loss +
     theme(
